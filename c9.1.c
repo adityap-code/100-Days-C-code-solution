@@ -16,27 +16,30 @@ int main () {
         printf("NOT A QUADRATIC EQUATION");
         return 0;
     }
+
     d=b*b-4*a*c;
+
     if (d>0){
         r1=(-b+sqrt(d))/(2*a);
         r2=(-b-sqrt(d))/(2*a);
-
         printf("\nRoots are Real and Distinct.\n ");
         printf("root 1=%.2f\n",r1);
         printf("root 2=%.2f\n",r2);
     }
+
     else if (d == 0) {
         r1 = -b / (2 * a);
         printf("\nRoots are Real and Equal.\n");
         printf("Root 1 = Root 2 = %.2f\n", r1);
     }
+
     else{
         realpart = -b / (2 * a);
         imagepart = sqrt(-d) / (2 * a);
-
         printf("\nRoots are Complex (Imaginary).\n");
         printf("Root 1 = %.2f + %.2fi\n", realpart, imagepart);
         printf("Root 2 = %.2f - %.2fi\n", realpart, imagepart);
     }
+    
     return 0;
 }
