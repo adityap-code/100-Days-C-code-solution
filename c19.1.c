@@ -18,6 +18,7 @@ int main() {
     printf("LCM : %d",(a*b)/max);
     return 0;
 =======
+<<<<<<< HEAD
 // Write a program to find the LCM of two numbers.
 
 #include <stdio.h>
@@ -36,5 +37,25 @@ int main() {
     }
     printf("LCM : %d",(a*b)/max);
     return 0;
+=======
+// Write a program to find the LCM of two numbers.
+
+#include <stdio.h>
+
+int main() {
+    int a,b,i,max=1;
+    printf("ENTER NUMBER : ");
+    scanf("%d",&a);
+    printf("ENTER NUMBER : ");
+    scanf("%d",&b);
+    
+    for (i=1 ; i<=a && i<=b ; i++){
+        if (a%i==0 && b%i==0){
+            max=i;
+        }
+    }
+    printf("LCM : %d",(a*b)/max);
+    return 0;
+>>>>>>> 872e7e8adf5e04ae96a6b53b31444d58265b538f
 >>>>>>> 68ae41e7e6ce41e2137cb5a5ef03f36a742644d1
 }

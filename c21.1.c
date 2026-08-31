@@ -4,7 +4,7 @@
 #include <math.h>
 
 int main () {
-    int a , d , ds=0 , l , m , f , p=1 ;
+    int a , d , ds=0, l , m , f , p=1 ;
     printf("ENTER NUMBER : ");
     scanf("%d",&a);
 
@@ -12,7 +12,7 @@ int main () {
 
     d=a;
 
-    while (d>=10){
+    while (d>0){
         ds++;
         d=d/10;
     }
