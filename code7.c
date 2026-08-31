@@ -12,6 +12,6 @@ int main () {
         }
     }
     printf("\nMAX : %d",max);
-    printf("\nLMC : %d",((a*b)/max));  
+    printf("\nLCM : %d",((a*b)/max));  
     return 0;
 }
