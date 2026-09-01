@@ -10,8 +10,7 @@ int main () {
 	z = n;
     while (z > 0){
 		c++;
-        //d=n%10;
-        //r=r*10+d;
+        
         z=z/10;
     }
     
@@ -19,7 +18,7 @@ int main () {
         r = r*10+(n%10);
         n = n/10;
     }
-    for(int i = 0;i<c;i++){
+    for(int i=0 ; i<c ; i++){
         if (r%10==0){
             printf("1");
         }
@@ -28,7 +27,7 @@ int main () {
         }
         r=r/10;
 	}
-    //printf("1's COMPLEMENT OF BINARY NUMBER IS : %d",c);
+    
     
     return 0;
     }
